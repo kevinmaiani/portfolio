@@ -16,7 +16,7 @@ body {
 }
 
 body, html {
-  font-family: Montserrat-Regular, sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   height: 100%;
 }
 body::-webkit-scrollbar {
@@ -739,7 +739,7 @@ iframe {
 
 .contact1-form-title {
   display: block;
-  font-family: Montserrat-ExtraBold;
+  font-family: "Montserrat-ExtraBold";
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
@@ -777,7 +777,7 @@ textarea.input1 + .shadow-input1 {
   display: block;
   width: 100%;
   background: #e6e6e6;
-  font-family: Montserrat-Bold;
+  font-family: "Montserrat-Bold";
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -831,7 +831,7 @@ textarea.input1 + .shadow-input1 {
   height: 50px;
   border-radius: 25px;
   background: #00c6ff;
-  font-family: Montserrat-Bold;
+  font-family: "Montserrat-Bold";
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -946,7 +946,7 @@ textarea.input1 + .shadow-input1 {
   right: 8px;
   pointer-events: none;
 
-  font-family: Montserrat-Medium;
+  font-family: "Montserrat-Medium";
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
