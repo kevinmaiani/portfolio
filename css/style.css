@@ -16,7 +16,7 @@ body {
 }
 
 body, html {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat-Regular, sans-serif;
   height: 100%;
 }
 body::-webkit-scrollbar {
@@ -565,7 +565,7 @@ padding-top: 35px;
 
   .navbarMain:hover .logo svg
   {
-    margin-left: 11rem;
+    margin-left: 12.2rem;
   }
 
   .navbarMain:hover .logo-text
@@ -739,12 +739,12 @@ iframe {
 
 .contact1-form-title {
   display: block;
-  font-family: "Montserrat-ExtraBold";
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 44px;
+  font-family: Montserrat-ExtraBold;
 }
 
 input.input1 {
@@ -777,10 +777,10 @@ textarea.input1 + .shadow-input1 {
   display: block;
   width: 100%;
   background: #e6e6e6;
-  font-family: "Montserrat-Bold";
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
+  font-family: Montserrat-Bold;
 }
 
 .shadow-input1 {
@@ -828,10 +828,10 @@ textarea.input1 + .shadow-input1 {
 
 .contact1-form-btn {
   min-width: 193px;
+  font-family: Montserrat-Bold;
   height: 50px;
   border-radius: 25px;
   background: #00c6ff;
-  font-family: "Montserrat-Bold";
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -946,7 +946,7 @@ textarea.input1 + .shadow-input1 {
   right: 8px;
   pointer-events: none;
 
-  font-family: "Montserrat-Medium";
+  font-family: Montserrat-Medium;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -963,7 +963,6 @@ textarea.input1 + .shadow-input1 {
 
 .alert-validate::after {
   content: "\f06a";
-  font-family: FontAwesome;
   display: block;
   position: absolute;
   color: #c80000;
