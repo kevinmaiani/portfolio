@@ -1,23 +1,4 @@
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url('/fonts/Montserrat/Montserrat-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('/fonts/Montserrat/Montserrat-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-ExtraBold;
-  src: url('/fonts/Montserrat//Montserrat-ExtraBold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url('/fonts/Montserrat//Montserrat-Medium.ttf'); 
-}
-
+@import url(./fonts.css);
 *,
 *::before,
 *::after {
@@ -35,7 +16,7 @@ body {
 }
 
 body, html {
-  font-family: Montserrat-Regular, sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
 }
 body::-webkit-scrollbar {
@@ -47,7 +28,7 @@ body::-webkit-scrollbar-track {
 }
 
 /*---------------------------------------------*/
-a {
+/* a {
 	font-family: Montserrat-Regular;
 	font-size: 14px;
 	line-height: 1.7;
@@ -57,7 +38,7 @@ a {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
-}
+} */
 
 a:focus {
 	outline: none !important;
@@ -163,9 +144,6 @@ h1,h2,h3,h4,h5,h6 {
   display: inline;
   position: absolute;
   left: -999px;
-  font-family: Montserrat-Regular;
-  font-size: 1.3rem;
-  font-weight: 400;
   transition: var(--transition-speed);
 }
 
