@@ -16,7 +16,7 @@ body {
 }
 
 body, html {
-  font-family: "Roboto", sans-serif;
+  font-family: Montserrat-Regular, sans-serif;
   height: 100%;
 }
 body::-webkit-scrollbar {
