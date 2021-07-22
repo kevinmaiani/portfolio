@@ -1,28 +1,19 @@
-
-
-/* @font-face */
-
-/* @font-face{
-    font-family: "Roboto";
-    src: '../fonts/Roboto/Roboto-Regular.ttf';
-} */
-
 @font-face {
   font-family: "Montserrat-Regular";
-  src: '../fonts/montserrat/Montserrat-Regular.ttf'; 
+  src: '/fonts/Montserrat/Montserrat-Regular.ttf'; 
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: '../fonts/montserrat/Montserrat-Bold.ttf'; 
+  src: '/fonts/Montserrat/Montserrat-Bold.ttf'; 
 }
 
 @font-face {
   font-family: "Montserrat-ExtraBold";
-  src: '../fonts/montserrat/Montserrat-ExtraBold.ttf'; 
+  src: '/fonts/Montserrat/Montserrat-ExtraBold.ttf'; 
 }
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: '../fonts/montserrat/Montserrat-Medium.ttf'; 
+  src: '/fonts/Montserrat/Montserrat-Medium.ttf'; 
 }
