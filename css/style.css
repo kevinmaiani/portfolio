@@ -46,7 +46,6 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-	color: #57b846;
 }
 
 /*---------------------------------------------*/
@@ -56,7 +55,8 @@ h1,h2,h3,h4,h5,h6 {
 /*---------------------------------------------*/
 .navbarMain {
   position: fixed;
-  background-color: var(--bg-primary);
+  /* background-color: var(--bg-primary); */
+  /* background-color: rgba(0,0,0,0.9); */
   transition: width 600ms ease;
   overflow: scroll;
   overflow-y: hidden;
@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6 {
   align-items: center;
   height: 5rem;
   color: var(--text-primary);
-  filter: grayscale(100%) opacity(0.7);
+  /* filter: grayscale(100%) opacity(0.7); */
   transition: var(--transition-speed);
 }
 
@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 1rem;
   text-align: center;
   color: var(--text-secondary);
-  background: var(--bg-secondary);
+  /* background: var(--bg-secondary); */
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;
@@ -183,7 +183,7 @@ h1,h2,h3,h4,h5,h6 {
 #hero {
   width: 100%;
   height: 100%;
-  background: url("../img/4.jpg") no-repeat center;
+  /* background: url("../img/tech2.jpg") no-repeat center; */
   background-size: cover;
 }
 #hero:before {
@@ -988,3 +988,6 @@ textarea.input1 + .shadow-input1 {
     opacity: 1;
   }
 }
+
+canvas{ display: block; vertical-align: bottom; } 
+#particles-js{ position:absolute; width: 100%; height: 100%; background-color: #141414; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 

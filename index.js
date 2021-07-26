@@ -2,9 +2,6 @@
 //     if(screen.width >600)
 //         document.querySelector('#content').classList.toggle('remove-visible');
 //   }
-$(document).ready(function(){
-    $('.header').height($(window).height());
-})
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
@@ -24,6 +21,24 @@ $(document).ready(function(){
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
-      $('.venobox').venobox();
+      // $('.venobox').venobox();
+
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
     });
+
+    var scroll_start = 0;
+   var startchange = $('.hero-container');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > 150) {
+          $(".navbarMain").css('background-color', 'rgba(0,0,0,0.9)');
+       } else {
+          $('.navbarMain').css('background-color', 'transparent');
+       }
+   });
+    }
   });
