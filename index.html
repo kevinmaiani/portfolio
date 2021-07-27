@@ -155,7 +155,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 col-xl-4 pt-3" data-aos="fade-right" data-aos-duration="1000" style="display: flex;" > <!--padding top solo quando sei mobile per staccare un po dall'immagine "chi è Kevin"-->
-				<div class="container" style="display: flex; justify-content: center; align-items: center;"> 
+				<div class="container js-tilt" style="display: flex; justify-content: center; align-items: center;"> 
           <img src="img/kevin-profile2.png" class="img-fluid" alt="kevin profile" >
         </div>
       </div>
@@ -308,7 +308,7 @@
 <section id="contact-me" class="contact-me section-bg">
   <div class="contact1">
 		<div class="container-contact1">
-			<div class="contact1-pic js-tilt" data-tilt>
+			<div class="contact1-pic">
 				<img src="img/img-01.png" alt="IMG">
 			</div>
 
@@ -365,19 +365,13 @@
          <script src="js/jquery.3.4.1.js"></script>
          <script src="vendor/bootstrap/js/popper.js"></script>
          <script src="vendor/select2/select2.min.js"></script>
-         <script src="vendor/tilt/tilt.jquery.min.js"></script>
-         <script >
-           $('.js-tilt').tilt({
-             scale: 1.1
-           })
-         </script>
          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
          <script>
           AOS.init();
         </script>
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="tilt.jquery.js"></script>
         <!-- controllare venobox sia qui che i link nel head -->
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="particles.js"></script>
         <script src="index.js"></script>
         <script src="js/main.js"></script>

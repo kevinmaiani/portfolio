@@ -35,7 +35,10 @@
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > 150) {
-          $(".navbarMain").css('background-color', 'rgba(0,0,0,0.9)');
+          $(".navbarMain").css({
+            'background-color'  : 'rgba(0,0,0,0.9)',
+            'transition' : '500ms ease'
+         }); 
        } else {
           $('.navbarMain').css('background-color', 'transparent');
        }
