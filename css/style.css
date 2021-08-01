@@ -7,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -213,7 +214,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #hero p {
   margin-bottom: 50px;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
   color: #fff;
   font-weight: 600;
 }
@@ -534,7 +535,7 @@ padding-top: 35px;
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 38px;
+    font-size: 2.4rem;
     line-height: 30px;
   }
   #hero h2 {
@@ -572,6 +573,7 @@ padding-top: 35px;
   {
     left: 0px;
   }
+  
 }
 
 @media(max-width: 767px) {
@@ -586,9 +588,6 @@ padding-top: 35px;
   }
 }
 
-@media(min-width: 768px) and (max-width: 1023px) {
-
-}
 .dark {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
@@ -991,3 +990,50 @@ textarea.input1 + .shadow-input1 {
 
 canvas{ display: block; vertical-align: bottom; } 
 #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #141414; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
+
+
+.arrow-container {
+  width: 27px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  margin-left: -11px;
+  z-index: 55;
+  color: #fff;
+}
+
+.arrow-down {
+  height: 6px;
+  background: #00c6ff;
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+}
+.arrow-down:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 100%;
+  border-radius: 5px;
+  background: #0072ff;
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+
+@keyframes bounce {
+50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .arrow-container {
+    bottom: 15%;
+  }
+}
