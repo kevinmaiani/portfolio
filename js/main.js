@@ -9,11 +9,45 @@
     
     /*==================================================================
     [ Validate ]*/
+    var form = $('.contact1-form');
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
     var subject = $('.validate-input input[name="subject"]');
     var message = $('.validate-input textarea[name="message"]');
+    var button = $('.contact1-form-btn');
 
+    button.on("click", (e) => 
+    {
+      e.preventDefault();
+      e.stopPropagation();
+      fetch("https://formsubmit.co/ajax/kevin.maiani5k@gmail.com", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          name: name.val(),
+          message: message.val(),
+          subject: subject.val(),
+          email: email.val()
+      })
+  })
+      .then(response => { 
+        response.json();
+        form[0].reset();
+        $("#alertEmailSuccess").addClass("alert alert-success");
+        $("#alertEmailSuccess").text("Grazie per avermi contattato, riceverai una risposta il prima possibile.");
+        window.setTimeout(function() {
+          $("#alertEmailSuccess").fadeTo(500, 0).slideUp(500, function(){
+          $(this).remove(); 
+        });
+      }, 2500);
+      })
+      .catch(error => {
+        console.log(error)
+      });
+    });
 
     $('.validate-form').on('submit',function(){
         var check = true;
@@ -62,5 +96,6 @@
     }
     
     
+ 
 
 })(jQuery);

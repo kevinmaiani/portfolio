@@ -494,7 +494,7 @@ padding-top: 35px;
   text-align: center;
   background: rgba(83, 189, 238, 0.95);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .my-work .portfolio-wrap .portfolio-links a:hover {
