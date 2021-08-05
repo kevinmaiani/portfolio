@@ -6,14 +6,15 @@ $(window).on("load", function () {
   });
 
   $("#portfolio-flters li").on("click", function () {
-    // $("#portfolio-flters li").removeClass('filter-active');
-    // $(this).addClass('filter-active');
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
 
     portfolioIsotope.isotope({
       filter: $(this).data("filter"),
     });
   });
-
+  $(".filter-active").trigger("click");
+  
   $(document).ready(function () {
     particlesJS.load("particles-js", "assets/particles.json", function () {
     });
